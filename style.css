@@ -100,10 +100,9 @@ color: #E0B612;
 .notify-section{
     width: 35%;
     margin:auto;
-   position: absolute;
+    position: absolute;
     top:50%;
     left: 30%;
-     display: none; 
     
 }
 .action-left {

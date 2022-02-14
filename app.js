@@ -35,14 +35,17 @@ function verifyPin() {
     const typedPin = document.getElementById("typed-numbers").value;
     const successMessage = document.getElementById("success");
     const errorMessage = document.getElementById("faild");
+    const messageEffect = document.getElementById("keypad");
     const count = document.getElementById("count");
 
     if (pin == typedPin) {
         successMessage.style.display = 'block'
         errorMessage.style.display = 'none'
+        messageEffect.style.backgroundColor = 'green';
     } else {
         errorMessage.style.display = 'block'
         successMessage.style.display = 'none'
+        messageEffect.style.backgroundColor = 'red';
         var countNumber = parseFloat(count.innerText);
         countNumber--;
         if (countNumber >= 1) {
